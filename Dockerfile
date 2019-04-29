@@ -10,4 +10,5 @@ RUN apk add --no-cache python3 && \
 COPY requirements.txt /requirements.txt
 COPY *.py /.
 RUN pip install -r /requirements.txt
+VOLUME /www
 CMD python
